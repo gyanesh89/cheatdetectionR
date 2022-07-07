@@ -1,7 +1,7 @@
 
 # This script contains person fit analysis code. Here we are using person fit analyis for detecting abberance.
 abberrantresponse<-function(itr_rdf,cutoff=2){
-itr_rdf %>% dplyr::select(-c(sid,centno))->test1
+itr_rdf %>% dplyr::select(-c(sid,centno,p_scor))->test1
 PerFit::r.pbis(test1) -> pfstat_rpbis
 PerFit::C.Sato(test1) -> pfstat_csato
 PerFit::Ht(test1) -> pfstat_ht
