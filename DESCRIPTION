@@ -11,4 +11,11 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.0.0
 Depends: 
-    dplyr, purrr, stringdist
+    dplyr,
+    foreach,
+    purrr,
+    stringdist,
+    rstudioapi,
+    ltm,
+    R (>= 2.10)
+LazyData: true
