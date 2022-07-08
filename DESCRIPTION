@@ -19,3 +19,5 @@ Depends:
     ltm,
     R (>= 2.10)
 LazyData: true
+URL: https://github.com/gyanesh89/cheatdetectionR
+BugReports: https://github.com/gyanesh89/cheatdetectionR/issues
