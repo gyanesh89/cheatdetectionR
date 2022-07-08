@@ -24,4 +24,5 @@ cat("\n")
 }
 }
 }
+usethis::use_data(common_correct,common_incorrect_differentoptions,common_incorrect_sameoptions,differentoutcomes,internal=T,overwrite=T)
 }
