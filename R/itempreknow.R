@@ -1,4 +1,4 @@
-
+#' @export
 itempreknow<-function(itr_rdf){
 
   itr_rdf %>%

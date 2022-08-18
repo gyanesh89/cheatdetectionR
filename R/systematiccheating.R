@@ -5,7 +5,7 @@ itr_rdf %>%
   group_by(centno) %>%
   summarise(n = n(),
             avgscor = mean(p_scor, na.rm = T),
-            sdscor = sd(p_scor, na.rm = T)) -> center_scores
+            sdscor = sd(p_scor, na.rm = T)) %>% ungroup() -> center_scores
 
 center_scores %>%
   ggplot(aes(avgscor, sdscor)) +
