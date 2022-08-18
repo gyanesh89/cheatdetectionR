@@ -22,7 +22,9 @@ Depends:
     naniar,
     dtplyr,
     data.table,
-    ggplot2
+    ggplot2,
+    stringr,
+    tidyr
 LazyData: true
 URL: https://github.com/gyanesh89/cheatdetectionR
 BugReports: https://github.com/gyanesh89/cheatdetectionR/issues
