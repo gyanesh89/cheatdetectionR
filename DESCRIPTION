@@ -9,7 +9,7 @@ License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.0.0
+RoxygenNote: 7.2.1
 Depends: 
     dplyr,
     foreach,
@@ -17,7 +17,12 @@ Depends:
     stringdist,
     rstudioapi,
     ltm,
-    R (>= 2.10)
+    R (>= 2.10),
+    PerFit,
+    naniar,
+    dtplyr,
+    data.table,
+    ggplot2
 LazyData: true
 URL: https://github.com/gyanesh89/cheatdetectionR
 BugReports: https://github.com/gyanesh89/cheatdetectionR/issues
