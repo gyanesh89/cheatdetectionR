@@ -51,7 +51,6 @@ optimal_k_index_response_similarity <- function(data, item.loc, suspect_pairs){
 
     lazy_dt(pairs) %>%
       left_join(subgroup_df, by = 'copier_id') %>%
-      as_tibble() %>%
       mutate(common_incorrect = rowSums((is_response_incorrect_df[subgroup_id,..cols] & is_response_incorrect_df[source_id,..cols]),na.rm = TRUE) +
                rowSums((is_response_na_df[subgroup_id,..cols] & is_response_na_df[source_id,..cols]))) %>%
       group_by(copier_id,source_id) %>%

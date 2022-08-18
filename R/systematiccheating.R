@@ -1,5 +1,5 @@
+#' @export
 
-# This script contains code for detecting cheating at a very high level view. This creates a SD vs Mean scores plot at center level.
 systematiccheating<-function(itr_rdf){
 itr_rdf %>%
   group_by(centno) %>%
